@@ -19,6 +19,8 @@
 
 尚未实测：全新 Linux systemd 安装/卸载、住宅 macOS launchd 安装/卸载、真实 WireGuard 穿越网络、真实公网出口、TUN/国内分流、真实 UDP、IPv6 泄漏检查、目标设备重启恢复。README 提供目标设备验收步骤；这些项目必须在部署后逐项确认。
 
-CI 工作流会在 Ubuntu/macOS 和 Python 3.9/3.13 上运行离线测试；在 GitHub 首次实际运行之前，不把工作流定义当作 CI 已通过。
+首次公开提交 `d9c4449` 的 [GitHub CI](https://github.com/wookoinc/residential-egress/actions/runs/36391849855) 已通过：Ubuntu/macOS × Python 3.9/3.13 四组环境，每组 15 项自动测试及 Shell 语法检查。后续版本以对应提交的 Actions 结果为准。CI 没有执行系统级安装或三机验收。
+
+公开发布前后均通过 Gitleaks 历史扫描；公开提交使用 GitHub noreply 邮箱。已从公开 URL 不带 Git 凭据克隆并重新运行测试。源文件与原部署凭据的本地比对无命中，公开仓库只包含通用脚本、文档和测试数据。
 
 本机尝试 Python 3.9 Linux Docker 复测，但一次性容器持续停留在 Created 状态（没有启动测试进程），限时结束并清理了本次容器。此项结果为 UNKNOWN，没有据此宣称 Linux 实测通过，也未修改 Docker 或其他容器。
