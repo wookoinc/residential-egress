@@ -1,0 +1,12 @@
+.private/
+dist/
+__pycache__/
+*.pyc
+.DS_Store
+.codebase-memory/
+*.key
+*.pem
+*.conf
+*.tar.gz
+*.zip
+!tests/fixtures/**

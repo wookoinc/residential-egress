@@ -1,0 +1,11 @@
+{
+  "sing_box": "1.14.2",
+  "sha256": {
+    "darwin-amd64": "b0bfb0dc70a5fc708710b9f5ea98b9ee76d40fa4169928d25d73edc4331df2fe",
+    "darwin-arm64": "925c5382eca8492b0150f868a6db20b18290a38700e621724b3703fd453e032d",
+    "linux-amd64": "a684484d7477d1437282ee411f4d131d0340aaad60a7868841ebd5d87dd8a0c6",
+    "linux-arm64": "b43a1fb1bda131c6653576741ce527eb2bdeab7c9308ca90ee8b972abb7e4a7f"
+  },
+  "source": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.2",
+  "digest_source": "GitHub release asset API sha256 digest, checked 2026-09-28"
+}
